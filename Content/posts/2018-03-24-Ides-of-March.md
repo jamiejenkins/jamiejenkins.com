@@ -1,0 +1,14 @@
+---
+date: 2018-03-24 10:10
+title: The Ides of March
+tags: random
+published: True
+---
+
+Last night on the way home from work my low fuel light came on and almost immediately my car started slowing down. I had to bring it to a stop on a 4 lane road with no shoulder or anywhere to turn off. I stopped short about 30 or 40 yards from an entrance to a parking lot. With the hazard lights on I started pushing the car uphill while avoiding the people going by in the left lane without bothering to slow down. An older lady got so close to me and my open driver's side door I could've touched her side mirror by barely moving my hand. I was getting close to the parking lot and getting very tired when a truck slowed down and turned into the parking lot I was going to. A young man in his early twenties came running towards me and with only a quick 'let me help' started pushing with me. We steered the car into the parking lot and he offered to take me to get some gas. His truck was old and rusty but clean inside. He had just gotten off a hard day's work and we talked only a little bit in the short ride to the gas station and back. We talked about how the weather was getting nice already and he mentioned how he was worried about tornado season because he lives in a small trailer and there is no shelter nearby.  It made me kind of sad that there are so many people that have to worry and fear for their lives because of the weather. He stayed and made sure my car started and when I offered him some money for his help he simply said, "It's not a blessing if I take money for it". I shook his hand and thanked him for his kindness.
+
+I also wanted to reassure him that he would be ok during tornado season and he didn't have to worry about it. But I didn't. I couldn't tell him for sure that he would be safe, and I asked myself why with all our technology and early warning systems and ability to make shelters are there people that have no warning or no where to go when they are in danger? We as a nation should be able to do better when protecting our greatest asset, people.
+
+And then today, watching the March For Our Lives on tv. Watching all of the inspiring young adults bravely giving speeches and inspiring millions to stand up and have their voices heard. Watching them push through the pain and anguish they are feeling from experiencing these horrible senseless acts of violence, to not only reach their fellow students, but people of all ages. Watching them sing with all the emotions of what they have witnessed cleary on their faces. Watching what feels like the start of a real change that will finally bring sensible gun control. I know it will be an uphill battle, but all it takes is enough people to help push it to the top.
+
+The Ides of March is the deadline for settling debts and this time around it is the senate that must pay their debt by voting for gun control or be voted out in November.
