@@ -1,3 +1,4 @@
-# About Page
- This is an about page.
+# about
+
+This is an about page.
  
