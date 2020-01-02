@@ -110,6 +110,7 @@ a {
 
 .description {
     margin-bottom: 4px;
+    float: right;
 }
 
 .item-list > li {
