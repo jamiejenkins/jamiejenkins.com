@@ -12,6 +12,8 @@ struct jamiejenkinscom: Website {
 
     struct ItemMetadata: WebsiteItemMetadata {
         // Add any site-specific metadata that you want to use here.
+        var published = "False"
+
     }
 
     // Update these properties to configure your website:
@@ -23,5 +25,5 @@ struct jamiejenkinscom: Website {
     var imagePath: Path? { "/images/avatar.png" }
 }
 
-// This will generate your website using the built-in Foundation theme:
+// This will generate website using my own Empire theme:
 try jamiejenkinscom().publish(withTheme: .empire)
