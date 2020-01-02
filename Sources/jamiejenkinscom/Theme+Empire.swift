@@ -198,6 +198,7 @@ private extension Node where Context == HTML.BodyContext {
         return .ul(
             .class("item-list"),
             .forEach(items) { item in
+                .if(item.published = "True",
                 .li(.article(
                     .h1(.a(
                         .href(item.path),
@@ -205,7 +206,7 @@ private extension Node where Context == HTML.BodyContext {
                         )),
                     .tagList(for: item, on: site),
                     .p(.text(item.description))
-                ))
+                )))
             }
         )
     }
