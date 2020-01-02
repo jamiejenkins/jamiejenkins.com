@@ -95,7 +95,10 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                 .header(for: context, selectedSection: nil),
                 .wrapper(
                     .h1()
-
+                    .div(
+                            .class("content"),
+                            .contentBody(item.body)
+                        ),
                 ),
                 .footer(for: context.site)
             )
