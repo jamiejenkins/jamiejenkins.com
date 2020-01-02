@@ -98,7 +98,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                     .div(
                             .class("content"),
                             .contentBody(item.body)
-                        ),
+                        )
                 ),
                 .footer(for: context.site)
             )
