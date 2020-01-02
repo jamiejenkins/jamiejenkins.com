@@ -20,7 +20,7 @@ struct jamiejenkinscom: Website {
     var description = "Nerdy & Wordy"
     var avatar = "images/avatar.png"
     var language: Language { .english }
-    var imagePath: Path? { "images/avatar.png" }
+    var imagePath: Path? { "/images/avatar.png" }
 }
 
 // This will generate your website using the built-in Foundation theme:
