@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/jamiejenkins
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jamiejenkins.com
+  * I am jamiejenkins (https://keybase.io/jamiejenkins) on keybase.
+  * I have a public key with fingerprint DA21 D6FD D792 CEE7 A3DB  281B E6F6 E5DB 1EFF 91E7
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101e8972723fc40c95b8cad2734d3520cc813d4634fde1eef103cfa9f2b92c2b3d80a",
+            "fingerprint": "da21d6fdd792cee7a3db281be6f6e5db1eff91e7",
+            "host": "keybase.io",
+            "key_id": "e6f6e5db1eff91e7",
+            "kid": "0101e8972723fc40c95b8cad2734d3520cc813d4634fde1eef103cfa9f2b92c2b3d80a",
+            "uid": "6ee6ff0d6bf1888fcefb6d0226fac419",
+            "username": "jamiejenkins"
+        },
+        "revoke": {
+            "sig_ids": [
+                "ef7e6050959858abdee3626fc69aff9ceef1b2b4333a642df1d22c8f0296807a0f"
+            ]
+        },
+        "service": {
+            "hostname": "jamiejenkins.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1485374693,
+    "expire_in": 157680000,
+    "prev": "516031b00f30b7203ec812cd1492c8952e372a47fc328016c30e61160fe0e98a",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.62
+Comment: https://keybase.io/crypto
+
+yMJmAnicrZJfiFVFHMfv5rp4N7ct/JMkSgwpGFd3/pwzZ87tIXrYMCMktsDKuJ6Z
++c3ds3fvObd7zl53W+5j2V21KCqMklqCoKL1X/m0hN4VF0x60hJR6SE1EPIPuGCr
+4Jyl3nxsXoaZ+f6+v898Z070LMp1d7RnDu06+tqNCx2/HJ8fyW1rdV4eRzLWY6g4
+jiqwMMGwhiQtVUKNiggTTED4HvUoM8rBynelUIGmHnM0cylWShCmHc4co4EAGIKZ
+MoFvqPSpopJpgQNUQCaMylCv1cMotbY6oERzo7VnRQBewLSkgkjghoOrJQFjfAKe
+LRyMk6zCwskggU1hbPfsorSA9wD9/8w9smDHwXYyWHNpiBDCKDCSa0wpN4FyiJ8J
+E6hHQRWseiiohjAEUSWMEtQsoDo04gpk2SZh2YInqPgGAuMBxy72XV+4IpAagHHr
+p7gf2MuoDElS6TDGAu5QbYimVAmDqc8F9gJs0JvW23ZthGrBPEvqAQSbVFy1fLV6
+nMYqHrang2laS4oZWTpWy+Q7QZb+NSrJMNL2rWxFA+pJGEeoSKxSpWHmTBzhMs/h
+PisgGK2FdSiFmcL1LJQdWR9oWEuXcMyIxNgwLD2KGdjAqdLEsfEK36XAPBo4nlGM
+Cky4Yhg4sUUGMPgiiz6Bt6IYFbnFDMrW0oYXBelIHVCzfWx7Z66jO9e1+KHsD+e6
+84/+97PVzJLcRzfQqjXuY9emPpgtrMzHzspq++cD5XWtR15p3l66dfrmnSd2Xe+V
+z295iv+14esXdwSNk/lzE/vH9/z+5end6MqzU+fSI5P3/jy098mZ5cv+Gfm0NTml
+x2rbH1/9xc1m9Hf++MPf+2OnL72Lx397utfvar//1b7VA6OfvVpOvv3h5Dcm7LnY
+Wtya3je999dPPr57nvSJuf7bR98+q/tfurZ+Ilwj9p9aNTq09fVn/DMD85fn9rxQ
+4vMThZ2XGhuWPHfwTO29jWvJiv4ts+7c8Oz8jz+dvXh18+HdvWtvdX3Xs1nn2+7n
+hx15hTcrnQN9x1Z8CMmyIwcH0zvxuj/u7ni5un7pqcl3+q7eB8JtYaU=
+=6IOz
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jamiejenkins
+
+==================================================================
+
