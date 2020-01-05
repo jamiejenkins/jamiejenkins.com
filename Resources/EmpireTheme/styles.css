@@ -17,6 +17,11 @@ body {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper {
     max-width: 900px;
     margin-left: auto;
@@ -177,7 +182,7 @@ footer {
     padding: 10px 0;
     text-align: center;
     margin-top: 1em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     background: rgb(250,250,250);
     background: rgba(250,250,250,.85);
     position: fixed;
@@ -185,6 +190,24 @@ footer {
     bottom: 0px;
     height: 5em;
     width: 100%;
+}
+
+.sociallinks {
+    font-size: 30pt;
+    color: #ccc;
+}
+
+.copyright {
+    font-size: 9pt;
+    float: center;
+}
+
+.generatedby {
+    width: 900px;
+    float: right;
+    text-align: right;
+    font-size: 9pt;
+    padding-right: 40px;
 }
 
 @media (prefers-color-scheme: dark) {

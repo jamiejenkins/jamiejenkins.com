@@ -221,17 +221,14 @@ private extension Node where Context == HTML.BodyContext {
 
     static func footer<T: Website>(for site: T) -> Node {
         return .footer(
-            .p(
-                .text("Generated using "),
-                .a(
-                    .text("Publish"),
-                    .href("https://github.com/johnsundell/publish")
-                )
-            ),
-            .p(.a(
-                .text("RSS feed"),
-                .href("/feed.rss")
-            ))
+            //.p(.a(
+            //    .text("RSS feed"),
+            //    .href("/feed.rss")
+            //))
+            .p( .a(.text("RSS"), .href("/feed.rss") ) ),
+            //.p(
+            .p( .class("copyright"), .text("©2020 jamiejenkins.com")),
+            .p( .class("generatedby"), .a(.text("Publish"), .href("https://github.com/johnsundell/publish")))
         )
     }
 }
