@@ -27,7 +27,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .header(for: context, selectedSection: nil),
                 .wrapper(
-                    .h1(""),
+                    //.h1(""),
                     //.p(
                     //    .class("description"),
                     //    .text(context.site.description)
@@ -218,10 +218,10 @@ private extension Node where Context == HTML.BodyContext {
             ))
         })
     }
-
+   
     static func footer<T: Website>(for site: T) -> Node {
         return .footer(
-            .p( .a(.text("RSS"), .href("/feed.rss") ) ),
+            .p( .class("social"), .a(.text("RSS"), .href("/feed.rss")) ),
             .p( .class("copyright"), .text("©2020 jamiejenkins.com")),
             .p( .class("generatedby"), .a(.text("Publish"), .href("https://github.com/johnsundell/publish")))
         )

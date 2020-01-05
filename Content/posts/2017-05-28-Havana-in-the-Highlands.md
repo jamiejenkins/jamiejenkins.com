@@ -2,7 +2,6 @@
 date: 2017-05-28 10:10
 title: Havana in the Highlands
 tags: cooking, random
-published: True
 ---
  
 Many years ago when I lived in Switzerland I hosted a 'Havana in Happy Valley' Cuban themed dinner for friends and coworkers there.  Now I live in the 'Highlands' and hosting 'Havana in the Highlands' for family and a few close friends.  I've missed cooking and intend to do it more often.

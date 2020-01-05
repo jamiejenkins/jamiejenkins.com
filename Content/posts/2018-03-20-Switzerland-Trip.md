@@ -2,7 +2,6 @@
 date: 2018-03-20 10:10
 title: Switzerland Trip
 tags: travel, food
-published: True
 ---
 
 I took my first trip to Switzerland (and Liechtenstein) in 10 years and stayed for 3 weeks.  It was so hard to be away from the family for so long, but it was nice to see some old colleagues and friends I had not seen in many years.  I probably gained a few pounds from the food… 

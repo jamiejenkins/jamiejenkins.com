@@ -2,7 +2,6 @@
 date: 2017-10-26 10:10
 title: Cooking Chili
 tags: cooking, apple
-published: True
 ---
 
 Bacon, Beef Brisket, Chocolate, Beer… 

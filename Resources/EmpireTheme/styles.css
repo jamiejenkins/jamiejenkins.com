@@ -14,7 +14,7 @@ body {
     background: #fff;
     color: #000;
     font-family: Helvetica, Arial;
-    padding: 8em 1em 6em 1em;
+    padding: 7em 1em 6em 1em;
     text-align: center;
 }
 
@@ -43,8 +43,8 @@ header {
 }
 
 header .wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: left;
 }
 
@@ -190,9 +190,8 @@ footer {
     width: 100%;
 }
 
-.sociallinks {
-    font-size: 30pt;
-    color: #ccc;
+.social {
+    float: center;
 }
 
 .copyright {
