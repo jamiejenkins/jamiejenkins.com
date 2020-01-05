@@ -15,6 +15,8 @@ body {
     color: #000;
     font-family: Helvetica, Arial;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 img {
@@ -27,7 +29,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-top; 120px;
-    padding: 130px 40px 110px 60px;
+    padding: 110px 40px 110px 20px;
     text-align: left;
 }
 
@@ -96,7 +98,6 @@ headerspace {
 }
 
 h1 {
-    margin-bottom: 20px;
     font-size: 2em;
 }
 
