@@ -17,6 +17,11 @@ body {
     text-align: center;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .wrapper {
     max-width: 900px;
     margin-left: auto;
