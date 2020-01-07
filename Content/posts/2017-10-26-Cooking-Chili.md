@@ -1,6 +1,7 @@
 ---
 date: 2017-10-26 10:10
 title: Cooking Chili
+description: Bacon, Beef Brisket, Chocolate, Beer… 
 tags: cooking, apple
 ---
 

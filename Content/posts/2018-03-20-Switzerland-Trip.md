@@ -1,6 +1,7 @@
 ---
 date: 2018-03-20 10:10
 title: Switzerland Trip
+description: Spoiler alert - it hasn't changed much.
 tags: travel, food
 ---
 

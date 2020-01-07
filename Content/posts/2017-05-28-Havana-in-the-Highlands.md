@@ -1,6 +1,7 @@
 ---
 date: 2017-05-28 10:10
 title: Havana in the Highlands
+description: Cuban food is one of my favorites.
 tags: cooking, random
 ---
  

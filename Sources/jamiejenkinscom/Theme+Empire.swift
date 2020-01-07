@@ -77,7 +77,6 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                             .class("content"),
                             .contentBody(item.body)
                         ),
-                        .span("Tagged with: "),
                         .tagList(for: item, on: context.site)
                     )
                 ),
@@ -199,10 +198,7 @@ private extension Node where Context == HTML.BodyContext {
             .class("item-list"),
             .forEach(items) { item in
                 .li(.article(
-                    .h1(.a(
-                        .href(item.path),
-                        .text(item.title)
-                        )),
+                    .h1(.a( .href(item.path), .text(item.title) )),
                     .tagList(for: item, on: site),
                     .p(.text(item.description))
                 ))

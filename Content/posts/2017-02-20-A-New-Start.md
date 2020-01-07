@@ -1,6 +1,7 @@
 ---
 date: 2017-02-20 10:10
 title: A New Start
+description: Jekyll and GitHub pages
 tags: jekyll, microblog
 ---
 

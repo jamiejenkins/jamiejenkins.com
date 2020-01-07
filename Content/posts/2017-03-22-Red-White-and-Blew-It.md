@@ -2,6 +2,7 @@
 date: 2017-03-22 10:10
 title: Red, White, and Blew it
 updated: 2018-04-09 10:10
+description: My thoughts on iPhone colors.
 tags: apple
 ---
 
