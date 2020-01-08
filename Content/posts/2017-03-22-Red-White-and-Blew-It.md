@@ -11,3 +11,5 @@ So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-e
 
 **Update:** Apple released new [iPhone 8 & 8 Plus (PRODUCT)RED Special Edition](https://www.apple.com/newsroom/2018/04/apple-introduces-iphone-8-and-iphone-8-plus-productred-special-edition/) today.  And they made the front of it black! Nice!
 👍🏻
+
+**Update 2:** [iPhone 11 Pro Midnight Green!](https://www.apple.com/iphone-11-pro/) I went with the Space Grey but I really like the green - hoping for Midnight Blue next year!
