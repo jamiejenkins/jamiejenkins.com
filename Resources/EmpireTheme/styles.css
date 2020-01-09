@@ -238,6 +238,6 @@ footer {
 
 @media(max-width: 600px) {
     .wrapper {
-        padding: 40px 20px;
+        padding: 20px 10px;
     }
 }
