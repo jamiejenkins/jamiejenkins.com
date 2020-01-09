@@ -23,7 +23,7 @@ img {
 }
 
 .wrapper {
-    max-width: 900px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
@@ -199,7 +199,6 @@ footer {
 }
 
 .generatedby {
-    width: 900px;
     float: right;
     text-align: right;
     font-size: 9pt;
