@@ -1,6 +1,5 @@
 /**
-*  Publish Foundation theme
-*  Copyright (c) John Sundell 2019
+*  Publish Empire theme
 *  MIT license, see LICENSE file for details
 */
 
@@ -14,7 +13,7 @@ body {
     background: #fff;
     color: #000;
     font-family: Helvetica, Arial;
-    padding: 7em 1em 6em 1em;
+    padding: 7em 0em 6em 0em;
     text-align: center;
 }
 
