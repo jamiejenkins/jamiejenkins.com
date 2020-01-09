@@ -116,7 +116,7 @@ a {
 
 .item-list > li {
     display: block;
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
     background-color: #eee;
     margin-bottom: 20px;
@@ -128,7 +128,7 @@ a {
 }
 
 .item-list h1 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 1.3em;
 }
 
@@ -137,7 +137,7 @@ a {
 }
 
 .tag-list {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .tag-list li,
