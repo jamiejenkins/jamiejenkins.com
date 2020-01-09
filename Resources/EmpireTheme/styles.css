@@ -235,7 +235,7 @@ footer {
 }
 
 
-@media(max-width: 600px) {
+@media(max-width: 1024px) {
     .wrapper {
         padding: 20px 10px;
     }
