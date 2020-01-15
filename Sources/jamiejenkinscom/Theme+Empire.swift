@@ -73,7 +73,9 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                 .wrapper(
                     .article(
                         .h1(.text(item.title)),
-                    .div(
+                        .p("Posted: ", "\(item.date.description(with: Locale(identifier: "en_US_POSIX")))" ),
+                        //.p("\(item.lastModified.description(with: Locale(identifier: "en_US_POSIX")))" ),
+                        .div(
                             .class("content"),
                             .contentBody(item.body)
                         ),
@@ -161,6 +163,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
             )
         )
     }
+    
 }
 
 private extension Node where Context == HTML.BodyContext {
@@ -197,8 +200,9 @@ private extension Node where Context == HTML.BodyContext {
         return .ul(
             .class("item-list"),
             .forEach(items) { item in
-                .li(.article(
+                .li (.article(
                     .h1(.a( .href(item.path), .text(item.title) )),
+//                    .p( .class("postedon"), "Posted: ", "\(item.date)")
                     .tagList(for: item, on: site),
                     .p(.text(item.description))
                 ))
@@ -222,4 +226,6 @@ private extension Node where Context == HTML.BodyContext {
             .p( .class("generatedby"), .a(.text("Publish"), .href("https://github.com/johnsundell/publish")))
         )
     }
+    
+   
 }

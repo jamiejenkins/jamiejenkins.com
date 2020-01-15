@@ -19,7 +19,7 @@ struct jamiejenkinscom: Website {
     var name = "Jamie Jenkins"
     var description = "Nerdy & Wordy"
     var language: Language { .english }
-    var imagePath: Path? { "/images/avatar.png" }
+    var imagePath: Path? { "images/avatar.png" }
 }
 
 // This will generate website using my own Empire theme:
