@@ -2,7 +2,7 @@
 date: 2017-02-20 10:10
 title: A New Start
 description: Jekyll and GitHub pages
-tags: jekyll, microblog
+tags: jekyll
 ---
 
 In preparation for the [Micro Blog](https://micro.blog/) launch I have reworked my website infrastructure.  I wanted it to be static, easily updatable with markdown files, and backed up in some way outside of my own domain.  So I decided to try [Jekyll](https://jekyllrb.com).

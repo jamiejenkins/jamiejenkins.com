@@ -142,13 +142,21 @@ a {
 .tag-list li,
 .tag {
     display: inline-block;
-    background-color: #555;
+/*    background-color: #555; */
     color: #ddd;
-    padding: 4px 6px;
+    padding: 6px 6px;
     border-radius: 5px;
     margin-right: 5px;
     alignment: center;
 }
+
+.tag-apple   { background-color: #38a8d8; }
+.tag-cooking { background-color: #e4ae2c; }
+.tag-food    { background-color: #aa7e16; }
+.tag-jekyll  { background-color: #533088; }
+.tag-publish { background-color: #67d82b; }
+.tag-random  { background-color: #9f7dd1; }
+.tag-travel  { background-color: #e77167; }
 
 .tag-list a,
 .tag a {

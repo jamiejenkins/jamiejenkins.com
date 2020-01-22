@@ -12,6 +12,7 @@ struct jamiejenkinscom: Website {
 
     struct ItemMetadata: WebsiteItemMetadata {
         // Add any site-specific metadata that you want to use here.
+        var updated: Date?
     }
 
     // Update these properties to configure your website:

@@ -27,12 +27,6 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .header(for: context, selectedSection: nil),
                 .wrapper(
-                    //.h1(""),
-                    //.p(
-                    //    .class("description"),
-                    //    .text(context.site.description)
-                    //),
-                    //.h2("Latest content"),
                     .itemList(
                         for: context.allItems(
                             sortedBy: \.date,
@@ -73,13 +67,14 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                 .wrapper(
                     .article(
                         .h1(.text(item.title)),
-                        .p("Posted: ", "\(item.date.description(with: Locale(identifier: "en_US_POSIX")))" ),
-                        //.p("\(item.lastModified.description(with: Locale(identifier: "en_US_POSIX")))" ),
+                        .p(.text(item.description)),
                         .div(
                             .class("content"),
                             .contentBody(item.body)
                         ),
-                        .tagList(for: item, on: context.site)
+                        .tagList(for: item, on: context.site),
+                        .p("Posted: ", "\(item.date.description(with: Locale(identifier: "en_US")))" )
+                        //.p("Updated: ", "\(item.lastModified.description(with: Locale(identifier: "en_US")))" )
                     )
                 ),
                 .footer(for: context.site)
@@ -116,10 +111,10 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                 .wrapper(
                     .h1("Browse all tags"),
                     .ul(
-                        .class("all-tags"),
+                        .class("tag-list"),
                         .forEach(page.tags.sorted()) { tag in
                             .li(
-                                .class("tag"),
+                                .class("tag-"+tag.string),
                                 .a(
                                     .href(context.site.path(for: tag)),
                                     .text(tag.string)
@@ -143,7 +138,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                 .wrapper(
                     .h1(
                         "Tagged with ",
-                        .span(.class("tag"), .text(page.tag.string))
+                        .span(.class("tag-"+page.tag.string), .text(page.tag.string))
                     ),
                     .a(
                         .class("browse-all"),
@@ -202,9 +197,9 @@ private extension Node where Context == HTML.BodyContext {
             .forEach(items) { item in
                 .li (.article(
                     .h1(.a( .href(item.path), .text(item.title) )),
-//                    .p( .class("postedon"), "Posted: ", "\(item.date)")
+                    .p(.text(item.description)),
                     .tagList(for: item, on: site),
-                    .p(.text(item.description))
+                    .p(.class("postedon"), "Posted: ", "\(item.date.description(with: Locale(identifier: "en_US")))")
                 ))
             }
         )
@@ -212,7 +207,7 @@ private extension Node where Context == HTML.BodyContext {
 
     static func tagList<T: Website>(for item: Item<T>, on site: T) -> Node {
         return .ul(.class("tag-list"), .forEach(item.tags) { tag in
-            .li(.a(
+            .li(.class("tag-"+tag.string), .a(
                 .href(site.path(for: tag)),
                 .text(tag.string)
             ))
