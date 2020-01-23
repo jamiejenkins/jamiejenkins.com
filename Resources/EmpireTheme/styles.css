@@ -105,6 +105,10 @@ p {
     margin-bottom: 10px;
 }
 
+.postedon {
+    font-size: .5em;
+}
+
 a {
     color: inherit;
 }
@@ -137,7 +141,7 @@ a {
 
 .tag-list {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .tag-list li,
