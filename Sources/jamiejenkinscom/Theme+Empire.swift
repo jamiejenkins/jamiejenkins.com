@@ -73,8 +73,8 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                             .contentBody(item.body)
                         ),
                         .tagList(for: item, on: context.site),
-                        .p("Posted: ", "\(item.date.description(with: Locale(identifier: "en_US")))" )
-                        //.p("Updated: ", "\(item.lastModified.description(with: Locale(identifier: "en_US")))" )
+                        .p(.class("postedon"), "Posted: ", "\(getFormattedDate(date: item.date.self))"),
+                        .p(.class("postedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
                     )
                 ),
                 .footer(for: context.site)
@@ -158,7 +158,8 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
             )
         )
     }
-    
+   
+  
 }
 
 private extension Node where Context == HTML.BodyContext {
@@ -192,8 +193,6 @@ private extension Node where Context == HTML.BodyContext {
     }
 
     static func itemList<T: Website>(for items: [Item<T>], on site: T) -> Node {
-        let dateformat = DateFormatter()
-        dateformat.dateFormat = "MMMM d, yyyy"
         return .ul(
             .class("item-list"),
             .forEach(items) { item in
@@ -201,7 +200,8 @@ private extension Node where Context == HTML.BodyContext {
                     .h1(.a( .href(item.path), .text(item.title) )),
                     .p(.text(item.description)),
                     .tagList(for: item, on: site),
-                    .p(.class("postedon"), "Posted: ", "\(dateformat.string(from: item.date.self))")
+                    .p(.class("postedon"), "Posted: ", "\(getFormattedDate(date: item.date.self))"),
+                    .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
                 ))
             }
         )
@@ -227,6 +227,13 @@ private extension Node where Context == HTML.BodyContext {
             .p( .class("generatedby"), .a(.text("Publish"), .href("https://github.com/johnsundell/publish")))
         )
     }
-    
+   
    
 }
+
+func getFormattedDate(date: Date) -> String {
+    let dateformat = DateFormatter()
+    dateformat.dateFormat = "MMMM d, yyyy"
+    return dateformat.string(from: date)
+}
+
