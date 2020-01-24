@@ -29,7 +29,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                 .wrapper(
                     .itemList(
                         for: context.allItems(
-                            sortedBy: \.date,
+                            sortedBy: \.lastModified,
                             order: .descending
                         ),
                         on: context.site
