@@ -3,7 +3,6 @@ date: 2017-03-22 10:10
 title: Red, White, and Blew it
 description: My thoughts on iPhone colors.
 tags: apple
-updated: 2018-04-09 10:10
 ---
 
 So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-edition-iphone-7) yesterday. The first picture I saw was the back of the 2 sizes and I started thinking to myself that maybe I could go red for my next iPhone. Then I saw the front. White. WHY? 
