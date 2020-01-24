@@ -5,8 +5,6 @@ description: Our friend's setup for movies in the driveway...
 tags: random
 ---
 
-Our friend's setup for movies in the driveway… 
-
  ![Movie Night](/images/movienight.jpg)
  ![Movie Night Snacks](/images/movienightsnacks.jpg)
  
