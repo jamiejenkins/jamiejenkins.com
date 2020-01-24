@@ -144,7 +144,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                         .class("browse-all"),
                         .text("Browse all tags"),
                         .href(context.site.tagListPath)
-                    ),
+                    ), 
                     .itemList(
                         for: context.items(
                             taggedWith: page.tag,
@@ -217,7 +217,7 @@ private extension Node where Context == HTML.BodyContext {
     static func footer<T: Website>(for site: T) -> Node {
         return .footer(
             .p( .class("social"), .a(.text("RSS"), .href("/feed.rss")) ),
-            .p( .class("copyright"), .text("©2020 jamiejenkins.com")),
+            .p( .class("copyright"), .text("©2020 "+site.name)),
             .p( .class("generatedby"), .a(.text("Publish"), .href("https://github.com/johnsundell/publish")))
         )
     }

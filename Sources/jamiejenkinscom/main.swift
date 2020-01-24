@@ -6,7 +6,8 @@ import Plot
 struct jamiejenkinscom: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
-        case about
+        // case about
+        //case social
         case posts
     }
 
@@ -17,7 +18,7 @@ struct jamiejenkinscom: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://jamiejenkins.com")!
-    var name = "Jamie Jenkins"
+    var name = "JamieJenkins.com"
     var description = "Nerdy & Wordy"
     var language: Language { .english }
     var imagePath: Path? { "images/avatar.png" }
