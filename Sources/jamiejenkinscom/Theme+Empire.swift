@@ -193,7 +193,7 @@ private extension Node where Context == HTML.BodyContext {
 
     static func itemList<T: Website>(for items: [Item<T>], on site: T) -> Node {
         let dateformat = DateFormatter()
-        dateformat.dateFormat = "MMMM d, yyyy @ HH:MM"
+        dateformat.dateFormat = "MMMM d, yyyy"
         return .ul(
             .class("item-list"),
             .forEach(items) { item in
