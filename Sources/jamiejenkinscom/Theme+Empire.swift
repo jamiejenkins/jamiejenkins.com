@@ -192,6 +192,8 @@ private extension Node where Context == HTML.BodyContext {
     }
 
     static func itemList<T: Website>(for items: [Item<T>], on site: T) -> Node {
+        let dateformat = DateFormatter()
+        dateformat.dateFormat = "MMMM d, yyyy @ HH:MM"
         return .ul(
             .class("item-list"),
             .forEach(items) { item in
@@ -199,7 +201,7 @@ private extension Node where Context == HTML.BodyContext {
                     .h1(.a( .href(item.path), .text(item.title) )),
                     .p(.text(item.description)),
                     .tagList(for: item, on: site),
-                    .p(.class("postedon"), "Posted: ", "\(item.date.description(with: Locale(identifier: "en_US")))")
+                    .p(.class("postedon"), "Posted: ", "\(dateformat.string(from: item.date.self))")
                 ))
             }
         )
