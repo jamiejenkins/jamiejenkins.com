@@ -1,7 +1,7 @@
 ---
 date: 2017-04-17 10:10
 title: Occam's Razor
-description: Be careful, it is sharp.
+description: It's not just for shaving.
 tags: random
 ---
 

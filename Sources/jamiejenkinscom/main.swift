@@ -6,7 +6,7 @@ import Plot
 struct jamiejenkinscom: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
-        case about
+        //case social
         case posts
     }
 
