@@ -202,7 +202,8 @@ private extension Node where Context == HTML.BodyContext {
                     .tagList(for: item, on: site),
                     .p(.class("postedon"), "Posted: ", "\(getFormattedDate(date: item.date))"),
                     .if(getFormattedDate(date: item.date) != getFormattedDate(date: item.lastModified),
-                    .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))"))
+                      .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
+                    )
                 ))
             }
         )
