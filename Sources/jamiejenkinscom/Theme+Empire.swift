@@ -217,17 +217,19 @@ private extension Node where Context == HTML.BodyContext {
     }
    
     static func footer<T: Website>(for site: T) -> Node {
-        let date = Date()
-        let format = DateFormatter()
-        format.dateFormat = "yyyy"
-        let formattedDate = format.string(from: date)
         return .footer(
             .p( .class("social"), .a(.text("RSS"), .href("/feed.rss")) ),
-            .p( .class("copyright"), .text("©"+formattedDate+" "+site.name)),
+            .p( .class("copyright"), .text("©"+getFormattedYear()+" "+site.name)),
             .p( .class("generatedby"), .a(.text("Publish"), .href("https://github.com/johnsundell/publish")))
         )
     }
    
+    static func getFormattedYear() -> String {
+        let date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "yyyy"
+        return format.string(from: date)
+    }
    
 }
 
