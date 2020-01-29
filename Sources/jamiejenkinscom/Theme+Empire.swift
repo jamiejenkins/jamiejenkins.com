@@ -73,7 +73,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                             .contentBody(item.body)
                         ),
                         .tagList(for: item, on: context.site),
-                        .p(.class("postedon"), "Posted: ", "\(getFormattedDate(date: item.date.self))"),
+                        .p(.class("postedon"), "Posted: ", "\(getFormattedDate(date: item.date))"),
                         .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
                     )
                 ),
@@ -200,8 +200,9 @@ private extension Node where Context == HTML.BodyContext {
                     .h1(.a( .href(item.path), .text(item.title) )),
                     .p(.text(item.description)),
                     .tagList(for: item, on: site),
-                    .p(.class("postedon"), "Posted: ", "\(getFormattedDate(date: item.date.self))"),
-                    .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
+                    .p(.class("postedon"), "Posted: ", "\(getFormattedDate(date: item.date))"),
+                    .if(getDateYYYMMDD(date: item.date) != getDateYYYMMDD(date: item.lastModified),
+                    .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))"))
                 ))
             }
         )
@@ -236,6 +237,12 @@ private extension Node where Context == HTML.BodyContext {
 func getFormattedDate(date: Date) -> String {
     let dateformat = DateFormatter()
     dateformat.dateFormat = "MMMM d, yyyy"
+    return dateformat.string(from: date)
+}
+
+func getDateYYYMMDD(date: Date) -> String {
+    let dateformat = DateFormatter()
+    dateformat.dateFormat = "YYYYMMDD"
     return dateformat.string(from: date)
 }
 
