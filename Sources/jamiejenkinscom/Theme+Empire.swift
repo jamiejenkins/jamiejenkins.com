@@ -74,7 +74,10 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                         ),
                         .tagList(for: item, on: context.site),
                         .p(.class("postedon"), "Posted: ", "\(getFormattedDate(date: item.date))"),
-                        .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
+                        .if(getFormattedDate(date: item.date) != getFormattedDate(date: item.lastModified),
+                          .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
+                        )
+//                        .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
                     )
                 ),
                 .footer(for: context.site)
