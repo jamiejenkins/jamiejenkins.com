@@ -130,14 +130,14 @@ a {
 
 .item-list > li {
     display: block;
-    padding: 15px;
+    padding: 30px;
     border-radius: 20px;
     background-color: #eee;
     margin-bottom: 20px;
 }
 
 .item-list > li:last-child {
-    margin-bottom: 0;
+    margin-bottom: 1em;
     
 }
 
