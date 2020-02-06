@@ -13,7 +13,6 @@ struct jamiejenkinscom: Website {
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
-        var hidden: String?
         // Add any site-specific metadata that you want to use here.
     }
 
