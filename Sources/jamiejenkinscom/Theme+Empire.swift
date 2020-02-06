@@ -200,6 +200,10 @@ private extension Node where Context == HTML.BodyContext {
                 .li (.article(
                     .h1(.a( .href(item.path), .text(item.title) )),
                     .p(.text(item.description)),
+                    .div(
+                        .class("content"),
+                        .contentBody(item.body)
+                    ),
                     .tagList(for: item, on: site),
                     .p(.class("postedon"), "Posted: ", "\(getFormattedDate(date: item.date))"),
                     .if(getFormattedDate(date: item.date) != getFormattedDate(date: item.lastModified),
