@@ -28,7 +28,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                 .header(for: context, selectedSection: nil),
                 .wrapper(
                     .itemList(
-                        for: context.allItems(
+                        for: context.allItems (
                             sortedBy: \.lastModified,
                             order: .descending
                         ),
@@ -48,7 +48,6 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .header(for: context, selectedSection: section.id),
                 .wrapper(
-                    //.h1(.text(section.title)),
                     .itemList(for: section.items, on: context.site)
                 ),
                 .footerWithIcons(for: context.items(taggedWith: "footer", sortedBy: \.title ), on: context.site)
@@ -114,7 +113,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                     .h1("Browse all tags"),
                     .ul(
                         .class("tag-list"),
-                        .forEach(page.tags.sorted()) { tag in
+                        .forEach(page.tags.sorted().filter {$0 != "footer"}) { tag in
                             .li(
                                 .class("tag-"+tag.string),
                                 .a(
@@ -150,7 +149,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                     .itemList(
                         for: context.items(
                             taggedWith: page.tag,
-                            sortedBy: \.date,
+                            sortedBy: \.lastModified,
                             order: .descending
                         ),
                         on: context.site
@@ -169,23 +168,21 @@ private extension Node where Context == HTML.BodyContext {
         .div(.class("wrapper"), .group(nodes))
     }
 
-    static func header<T: Website>(
-        for context: PublishingContext<T>,
-        selectedSection: T.SectionID?
-    ) -> Node {
-        let sectionIDs = T.SectionID.allCases
+    static func header<T: Website>(for context: PublishingContext<T>, selectedSection: T.SectionID? ) -> Node {
+        let allSectionIDs = T.SectionID.allCases
+        let shownSectionIDs = allSectionIDs.dropFirst() // this removes footer section as it should be first
         return .header(
             .wrapper(
                 .a(.class("site-name"), .href("/"), .text(context.site.name)),
                 .p(.class("description"), .text(context.site.description)),
-                .if(sectionIDs.count > 1,
+                .if(shownSectionIDs.count > 1,
                     .nav(
-                        .ul(.forEach(sectionIDs) { section in
+                        .ul(.forEach(shownSectionIDs) { section in
                             .li(.a(
                                 .class(section == selectedSection ? "selected" : ""),
                                 .href(context.sections[section].path),
-                                .text(context.sections[section].title)
-                            ))
+                                .text(context.sections[section].description)
+                                ))
                         })
                     )
                 )
@@ -194,9 +191,12 @@ private extension Node where Context == HTML.BodyContext {
     }
 
     static func itemList<T: Website>(for items: [Item<T>], on site: T) -> Node {
+        let allSectionIDs = T.SectionID.allCases
+        let shownSectionIDs = allSectionIDs.dropFirst() // this removes footer section as it should be first
+        let shownItems = items.filter { shownSectionIDs.contains($0.sectionID) }
         return .ul(
             .class("item-list"),
-            .forEach(items) { item in
+            .forEach(shownItems) { item in
                 .li (.article(
                     .h1(.a( .href(item.path), .text(item.title) )),
                     .p(.text(item.description)),
@@ -205,13 +205,15 @@ private extension Node where Context == HTML.BodyContext {
                     .if(getFormattedDate(date: item.date) != getFormattedDate(date: item.lastModified),
                       .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
                     )
-                ))
+                    ))
             }
         )
     }
 
     static func tagList<T: Website>(for item: Item<T>, on site: T) -> Node {
-        return .ul(.class("tag-list"), .forEach(item.tags) { tag in
+        let allTags = item.tags
+        let shownTags = allTags.filter { $0 != "footer" }
+        return .ul(.class("tag-list"), .forEach(shownTags) { tag in
             .li(.class("tag-"+tag.string), .a(
                 .href(site.path(for: tag)),
                 .text(tag.string)
@@ -219,19 +221,12 @@ private extension Node where Context == HTML.BodyContext {
         })
     }
    
-    static func footer<T: Website>(for site: T) -> Node {
-        return .footer(
-            .p( .class("social"), .a(.text("RSS"), .href("/feed.rss")) ),
-            .p( .class("copyright"), .text("©"+getFormattedYear()+" "+site.name)),
-            .p( .class("generatedby"), .a(.text("Publish"), .href("https://github.com/johnsundell/publish")))
-        )
-    }
-   
+
     static func footerWithIcons<T: Website>(for items: [Item<T>], on site: T) -> Node {
         return .footer(
             .span(.class("footer-list"),
                   .forEach(items) { item in
-                .span(.class("footer-icon"), .contentBody(item.body))
+                    .span(.class("footer-icon"), .contentBody(item.body))
                     }
                 ),
             .p( .class("copyright"), .text("©"+getFormattedYear()+" "+site.name)),

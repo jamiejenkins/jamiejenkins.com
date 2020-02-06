@@ -6,11 +6,14 @@ import Plot
 struct jamiejenkinscom: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
-        case social
+        // footer should always be first so that it remains 'hidden'
+        // and there should always be at minimum two sections
+        case footer
         case posts
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
+        var hidden: String?
         // Add any site-specific metadata that you want to use here.
     }
 

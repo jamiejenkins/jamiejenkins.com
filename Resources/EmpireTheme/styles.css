@@ -218,24 +218,19 @@ footer {
 }
 
 .footer-list p {
-    max-width: 40px;
-    height: auto;
     display: inline;
 }
 .footer-icon {
     padding: 2px;
-}
-.footer-icon p{
-    display: inline;
 }
 .footer-icon img {
     max-width: 40px;
     height: auto;
 }
 
-
 .copyright {
-    font-size: 9pt;
+    padding-top: 4px;
+    font-size: 10pt;
     float: center;
 }
 
