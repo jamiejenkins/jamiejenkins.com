@@ -35,7 +35,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                         on: context.site
                     )
                 ),
-                .footer(for: context.site)
+                .footerWithIcons(for: context.items(taggedWith: "footer", sortedBy: \.title ), on: context.site)
             )
         )
     }
@@ -48,10 +48,10 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .header(for: context, selectedSection: section.id),
                 .wrapper(
-                    .h1(.text(section.title)),
+                    //.h1(.text(section.title)),
                     .itemList(for: section.items, on: context.site)
                 ),
-                .footer(for: context.site)
+                .footerWithIcons(for: context.items(taggedWith: "footer", sortedBy: \.title ), on: context.site)
             )
         )
     }
@@ -77,10 +77,9 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                         .if(getFormattedDate(date: item.date) != getFormattedDate(date: item.lastModified),
                           .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
                         )
-//                        .p(.class("updatedon"), "Updated: ", "\(getFormattedDate(date: item.lastModified))")
                     )
                 ),
-                .footer(for: context.site)
+                .footerWithIcons(for: context.items(taggedWith: "footer", sortedBy: \.title ), on: context.site)
             )
         )
     }
@@ -99,7 +98,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                             .contentBody(page.body)
                         )                    
                 ),
-                .footer(for: context.site)
+                .footerWithIcons(for: context.items(taggedWith: "footer", sortedBy: \.title ), on: context.site)
             )
         )
     }
@@ -126,7 +125,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                         }
                     )
                 ),
-                .footer(for: context.site)
+                .footerWithIcons(for: context.items(taggedWith: "footer", sortedBy: \.title ), on: context.site)
             )
         )
     }
@@ -157,7 +156,7 @@ private struct EmpireHTMLFactory<Site: Website>: HTMLFactory {
                         on: context.site
                     )
                 ),
-                .footer(for: context.site)
+                .footerWithIcons(for: context.items(taggedWith: "footer", sortedBy: \.title ), on: context.site)
             )
         )
     }
@@ -175,7 +174,6 @@ private extension Node where Context == HTML.BodyContext {
         selectedSection: T.SectionID?
     ) -> Node {
         let sectionIDs = T.SectionID.allCases
-
         return .header(
             .wrapper(
                 .a(.class("site-name"), .href("/"), .text(context.site.name)),
@@ -229,6 +227,19 @@ private extension Node where Context == HTML.BodyContext {
         )
     }
    
+    static func footerWithIcons<T: Website>(for items: [Item<T>], on site: T) -> Node {
+        return .footer(
+            .span(.class("footer-list"),
+                  .forEach(items) { item in
+                .span(.class("footer-icon"), .contentBody(item.body))
+                    }
+                ),
+            .p( .class("copyright"), .text("©"+getFormattedYear()+" "+site.name)),
+            .p( .class("generatedby"), .a(.text("Publish"), .href("https://github.com/johnsundell/publish")))
+        )
+
+    }
+
     static func getFormattedYear() -> String {
         let date = Date()
         let format = DateFormatter()
