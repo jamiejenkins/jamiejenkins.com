@@ -12,3 +12,8 @@ So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-e
 👍🏻
 
 **Update 2:** [iPhone 11 Pro Midnight Green!](https://www.apple.com/iphone-11-pro/) I went with the Space Grey but I really like the green - hoping for Midnight Blue next year!
+
+**Update 3:** So many color choices for [iPhone 12 Pro](https://www.apple.com/iphone-12-pro/) and [iPhone 12](https://www.apple.com/iphone-12/)! I went with the Pacific Blue iPhone 12 Pro Max and really like the iPhone 12 Blue as well!
+
+![iPhone 12 Pro Pacific Blue](/images/iphone12_pro_pacific_blue.jpg)
+![iPhone 12 Blue](/images/iphone12_blue.jpg)
