@@ -163,7 +163,7 @@ a {
     border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
-    alignment: center;
+    align-content: center;
 }
 
 .tag-apple   { background-color: #38a8d8; }
@@ -230,7 +230,8 @@ footer {
 .copyright {
     padding-top: 4px;
     font-size: 10pt;
-    float: center;
+    float: none;
+    align-content: center;
 }
 
 .generatedby {
