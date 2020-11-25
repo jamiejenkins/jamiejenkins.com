@@ -261,11 +261,9 @@ footer {
     }
 
     header {
-        background: rgb(0,0,0);
         background: rgba(0,0,0,.85);
     }
     footer {
-        background: rgb(0,0,0);
         background: rgba(0,0,0,.85);
     }
 }
