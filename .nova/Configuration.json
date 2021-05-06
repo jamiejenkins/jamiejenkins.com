@@ -1,4 +1,6 @@
 {
+  "workspace.color" : 3,
+  "workspace.name" : "Publish Jamie Jenkins dot Com",
   "workspace.preview_root" : "Output\/",
   "workspace.preview_type" : "custom",
   "workspace.preview_url" : "http:\/\/localhost:8000\/"
