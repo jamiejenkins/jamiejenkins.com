@@ -17,3 +17,7 @@ So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-e
 
 ![iPhone 12 Pro Pacific Blue](/images/iphone12_pro_pacific_blue.jpg)
 ![iPhone 12 Blue](/images/iphone12_blue.jpg)
+
+**Update 4** 
+
+![iPhone 12 Pro Max with Mandalorian Pop Socket](/images/iphone12promax-mandalorian-popsocket.jpg)
