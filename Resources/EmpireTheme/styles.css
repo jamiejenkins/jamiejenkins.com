@@ -237,7 +237,7 @@ footer {
 .generatedby {
     float: right;
     text-align: right;
-    font-size: 8pt;
+    font-size: small;
     padding-right: 40px;
     margin-top: -2em;
 }
