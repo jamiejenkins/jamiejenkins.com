@@ -2,4 +2,4 @@
 title: 01 Mastodon
 tags: footer
 ---
-[![@jamie@jenkins.cc](/images/mastodon.svg)][https://jenkins.cc/@jamie]
+[![@jamiejenkins@mastodon.social](/images/mastodon.svg)][https://mastodon.social/@jamiejenkins]
