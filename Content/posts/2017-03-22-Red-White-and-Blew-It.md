@@ -24,4 +24,4 @@ So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-e
 
 **Update 5** New iPhone 13 Pro Max Sierra Blue with Abyss Blue Silicone Case and a custom printed MagSafe PopSocket.
 
-![New iPhone 13 Pro Max Sierra Blue with Abyss Blue Silicone Case and a custom printed MagSafe PopSocket.](/images/iPhone_13_Pro_Max_Sierra_Blue_Silicone_Case_Abyss_Blue_Custom_MagSafe_PopSocket_StarWars.heic)
+![New iPhone 13 Pro Max Sierra Blue with Abyss Blue Silicone Case and a custom printed MagSafe PopSocket.](/images/iPhone_13_Pro_Max_Sierra_Blue_Silicone_Case_Abyss_Blue_Custom_MagSafe_PopSocket_StarWars.jpg)
