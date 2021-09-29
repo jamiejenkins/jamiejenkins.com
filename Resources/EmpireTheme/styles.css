@@ -212,7 +212,7 @@ footer {
     position: fixed;
     left: 0px;
     bottom: 0px;
-    height: 6em;
+    height: 5em;
     width: 100%;
 }
 
@@ -223,7 +223,7 @@ footer {
     padding: 2px;
 }
 .footer-icon img {
-    max-width: 36px;
+    max-width: 40px;
     height: auto;
 }
 
