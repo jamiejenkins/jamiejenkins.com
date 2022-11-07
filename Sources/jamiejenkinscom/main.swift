@@ -19,7 +19,7 @@ struct jamiejenkinscom: Website {
     // Update these properties to configure your website:
     var url = URL(string: "https://jamiejenkins.com")!
     var name = "Jamie Jenkins"
-    var description = "Nerdy & Wordy"
+    var description = "Nerdy (occasionally wordy)"
     var language: Language { .english }
     var imagePath: Path? { "images/avatar.png" }
 }
