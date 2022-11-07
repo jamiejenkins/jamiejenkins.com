@@ -25,3 +25,6 @@ So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-e
 **Update 5** New iPhone 13 Pro Max Sierra Blue with Abyss Blue Silicone Case and a custom printed MagSafe PopSocket.
 
 ![New iPhone 13 Pro Max Sierra Blue with Abyss Blue Silicone Case and a custom printed MagSafe PopSocket.](/images/iPhone_13_Pro_Max_Sierra_Blue_Silicone_Case_Abyss_Blue_Custom_MagSafe_PopSocket_StarWars.jpg)
+
+**Update 6** Back in Black! New iPhone 14 Pro Max Space Black with Black Leather Case.  Maybe I should have went with Deep Purple instead...
+![New iPhone 14 Pro Max Space Black with Black Leather Case.](/images/iPhone_14_Pro_Max.jpeg)
