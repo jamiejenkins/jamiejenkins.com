@@ -22,9 +22,9 @@ struct jamiejenkinscom: Website {
     var description = "Nerdy (occasionally wordy)"
     var language: Language { .english }
     var imagePath: Path? { "images/avatar.png" }
-    var og:url = URL(string: "https://jamiejenkins.com")!
-    var og:title = "JamieJenkins.com"
-    var og:image = Path? { "images/avatar.png" }
+//    var og:url = URL(string: "https://jamiejenkins.com")!
+//    var og:title = "JamieJenkins.com"
+//    var og:image = Path? { "images/avatar.png" }
 }
 
 // This will generate website using my own Empire theme:
