@@ -32,4 +32,4 @@ So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-e
 **Update 7** Blue Titanium iPhone 15 Pro Max - no case...
 
 **Update 8** White Titanium iPhone 16 Pro Max - Beats MagSafe Case
-![White Titanium iPhone 16 Pro Max - Beats MagSafe Case](images/iPhone16ProMaxWhite-BeatsCase.jpg)
+![White Titanium iPhone 16 Pro Max - Beats MagSafe Case](/images/iPhone16ProMaxWhite_BeatsCase.jpg) 
