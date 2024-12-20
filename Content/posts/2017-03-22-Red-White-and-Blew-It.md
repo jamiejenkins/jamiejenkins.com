@@ -30,3 +30,6 @@ So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-e
 ![New iPhone 14 Pro Max Space Black with Black Leather Case.](/images/iPhone_14_Pro_Max.jpeg)
 
 **Update 7** Blue Titanium iPhone 15 Pro Max - no case...
+
+**Update 8** White Titanium iPhone 16 Pro Max - Beats MagSafe Case
+![White Titanium iPhone 16 Pro Max - Beats MagSafe Case](/images/iPhone16ProMaxWhite_BeatsCase.jpg) 
