@@ -16,6 +16,7 @@ So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-e
 **Update 3:** So many color choices for [iPhone 12 Pro](https://www.apple.com/iphone-12-pro/) and [iPhone 12](https://www.apple.com/iphone-12/)! I went with the Pacific Blue iPhone 12 Pro Max and really like the iPhone 12 Blue as well!
 
 ![iPhone 12 Pro Pacific Blue](/images/iphone12_pro_pacific_blue.jpg)
+
 ![iPhone 12 Blue](/images/iphone12_blue.jpg)
 
 **Update 4** I'm loving my current setup.
