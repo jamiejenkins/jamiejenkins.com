@@ -34,3 +34,4 @@ So, Apple released a [Red iPhone](http://www.apple.com/shop/buy-iphone/special-e
 
 **Update 8** White Titanium iPhone 16 Pro Max - Beats MagSafe Case
 ![White Titanium iPhone 16 Pro Max - Beats MagSafe Case](/images/iPhone16ProMaxWhite_BeatsCase.jpg) 
+
